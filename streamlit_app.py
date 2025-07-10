@@ -261,7 +261,7 @@ st.sidebar.info(
 
 uploaded_file = st.sidebar.file_uploader("Upload Your Energy Data (CSV)", type=["csv"])
 
-tab = st.sidebar.selectbox("Navigate:", ["Home", "Energy & Summary", "Anomalies & Groupings", "Forecasting"])
+tab = st.sidebar.radio("📌 Navigation", ["Home", "Energy & Summary", "Anomalies & Groupings", "Forecasting"])
 
 if tab == "Home":
     st.title("⚡ EnergyAI — Smarter Energy Monitoring")
